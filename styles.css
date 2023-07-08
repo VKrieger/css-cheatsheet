@@ -1,0 +1,87 @@
+body   {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 24px 0;
+    background-color: rgb(17, 23, 45);
+    color: white;
+
+}
+
+
+header h1 {
+    font-size: 3rem;
+    color: rgb(181, 203, 100);
+}
+
+header h4 {
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+}
+
+nav  a:hover{
+    background-color: rgb(31, 36, 57);
+}
+
+#desciption {
+    padding: 1rem 1rem;
+    margin: 1rem auto;
+    width: fit-content;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+
+
+}
+
+article {
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    flex-basis: 36rem;
+}
+
+code {
+    padding: 1rem;
+    background-color: rgb(17, 23, 45);
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    flex-basis: 36rem;
+}
+
+.selector {
+    color: rgb(200, 107, 130);
+}
+
+.property {
+    margin-left: 1rem;
+    color: rgb(181, 203, 100);
+}
+
