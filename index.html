@@ -11,20 +11,20 @@
     <header>
         <h4>CSS Cheatsheet</h4>
         <h1>position:</h1>
-        <nav>
-            <a href="#static">static</a>
-            <a href="#relative">relative</a>
-            <a href="#absolute">absolute</a>
-            <a href="#fixed">fixed</a>
-            <a href="#sticky">sticky</a>
-        </nav>
     </header>
+    <nav>
+        <a href="#static">static</a>
+        <a href="#relative">relative</a>
+        <a href="#absolute">absolute</a>
+        <a href="#fixed">fixed</a>
+        <a href="#sticky">sticky</a>
+    </nav>
     <main>
         <p id="desciption">The <span>position</span> CSS property sets how an element is positioned in a document. The
             <span>top</span>, <span>right</span>, <span>bottom</span>, and <span>left</span> properties determine
             the final location of positioned elements.
         </p>
-        <section id="#static">
+        <section id="static">
             <article>
                 <h2>static</h2>
                 <p>The Element is positioned according to the normal flow of the document. The <span>top</span>,
@@ -33,12 +33,98 @@
                 </p>
             </article>
             <code>
-                <p><span class="selector">.container1</span> {</p>
-                <p><span class="property">position</span>: static;</p>
-                <p>}</p>
+                <p><span class="selector">.container1</span> {<br>
+                    <span class="property">position</span>: static;<br>
+                    }
+                </p>
+            </code>
+        </section>
+        <section id="relative">
+            <article>
+                <h2>relative</h2>
+                <p>The element is pasitioned according to the normal flow of the document, and then offset relative to itself based on the values of <span>top</span>, 
+                <span>right</span>, <span>bottom</span>, and <span>left</span>. The offset does not affect the position of any other elements; thus, the space given 
+            for the element in the page layout is the same as if position were <span>static</span>.
+                </p>
+                <p>
+                This value creates a new  stacking context when the value of <span>z-index</span> is not <span>auto</span>. Its effects on <span>table-*-group</span>, 
+                <span>table-row</span>, <span>table-column</span>, <span>table-cell</span>, and <span>table-caption</span> elements is undefined. 
+                </p>
+            </article>
+            <code>
+                <p><span class="selector">.container1</span> {<br>
+                    <span class="property">position</span>: relative;<br>
+                    <span class="property">top</span>: 40px;<br>
+                    <span class="property">left</span>: 40px;<br>
+                    }
+                </p>
+            </code>
+        </section>
+        <section id="absolute">
+            <article>
+                <h2>absolute</h2>
+                <p>The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is 
+                    positioned relative to its closest containing block. Its final position is determined by the values of <span>top</span>, <span>right</span>, 
+                    <span>bottom</span>, and <span>left</span>.
+                </p>
+                <p>
+                    This value creates a new stacking context when the value of <span>z-index</span> is not <span>auto</span>. The margins
+                    of absolutely positioned boxes do not collaps with other  margins.
+                </p>
+            </article>
+            <code>
+                <p><span class="selector">.container1</span> {<br>
+                    <span class="property">position</span>: absolute;<br>
+                    <span class="property">top</span>: 20px;<br>
+                    <span class="property">right</span>: 30px;<br>
+                    }  
+                </p>
+            </code>
+        </section>
+        <section id="fixed">
+            <article>
+                <h2>fixed</h2>
+                <p>The element is removed from the normal document flow, and no space is created for the element in the page  layout. The element 
+                    is positioned relative to its closest containing block. Its final position is determined by the values of <span>top</span>, 
+                    <span>right</span>, <span>bottom</span>, and <span>left</span>.
+                </p>
+                <p>
+                    This value always  creates a new stacking context. In printed documents, the element is placed in the same position on every page.
+                </p>
+            </article>
+            <code>
+                <p><span class="selector">.container1</span> {<br>
+                <span class="property">position</span>: fixed;<br>
+                <span class="property">top</span>: 50px;<br>
+                <span class="property">left</span>: 70px;<br>
+                }
+                </p>
+            </code>
+        </section>
+        <section id="sticky">
+            <article>
+                <h2>sticky</h2>
+                <p>The element is positioned according to the normal flow of the document, and the offset relativ to its nearest scrolling ancestor and  
+                    containing block (nearest block-level ancestor), inlcuding table-related elements, based on the values of <span>top</span>, 
+                    <span>right</span>, <span>bottom</span>, and <span>left</span>. 
+                </p>
+                <p>This value always creates a new stacking context. Note that a  sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" 
+                    (created when <span>overflow</span> is <span>hidden</span>, <span>scroll</span>, <span>auto</span>, or <span>overlay</span>), even if that ancestor
+                    isn't the nearest  actually  scrolling ancestor.
+                </p>
+            </article>
+            <code>
+                <p><span class="selector">.container1</span> {<br>
+                    <span class="property">position</span>: sticky;<br>
+                    <span   class="property">top</span>: 0;<br>
+                    }
+                </p>
             </code>
         </section>
     </main>
+    <footer>
+        
+    </footer>
 </body>
 
 </html>

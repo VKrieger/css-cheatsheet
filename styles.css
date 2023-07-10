@@ -1,45 +1,56 @@
+
+
 body   {
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-padding-top: 2rem;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    padding: 24px 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 24px;
     background-color: rgb(17, 23, 45);
     color: white;
-
 }
 
 
 header h1 {
     font-size: 3rem;
     color: rgb(181, 203, 100);
+    margin: 0;
 }
 
 header h4 {
-    margin: auto;
+    margin-top: 0;
+    margin-left: -4.5rem;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5rem;
+
+    padding: 20px 0 ;
+    background-color: rgb(17, 23, 45);
+    color: white;
+    position: sticky;
+    top: 0;
+    text-align: center;
 }
 
 nav a {
+
     color: white;
     text-decoration: none;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.25rem;
     border-radius: 5px;
+    margin: 0 1.25rem;
 }
 
 nav  a:hover{
     background-color: rgb(31, 36, 57);
+}
+
+main {
+    line-height: 1.75;
 }
 
 #desciption {
@@ -52,10 +63,13 @@ nav  a:hover{
 
 
 section {
+    scroll-margin-top:  4.75rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+    margin: 16px 0;
 
 
 }
@@ -85,3 +99,13 @@ code {
     color: rgb(181, 203, 100);
 }
 
+span:not(.selector, .property) {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+footer {
+    margin: 2rem;
+    padding: 2rem;
+}
